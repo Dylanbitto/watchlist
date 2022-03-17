@@ -23,8 +23,14 @@ const BackDrop = styled.div
     position: absoulute;
     display: flex;
     flex-direction: column;
-    border-radius: 50px;
-}
+    border-radius: 50%;
+    background: rgba(230, 126, 34,1.0)
+    background: linear-gradient{
+        58deg,
+        rgba(230, 126, 34,1.0) 20%;
+        rgba(230, 126, 34,1.0) 100%;
+    };
+};
     false; 
   return (
     <div className="App">
@@ -47,5 +53,9 @@ const BackDrop = styled.div
 }
 
 export function AccountBox{props} {
-
+    return <BoxContainer>
+        <TopContainer>
+            <BackDrop></BackDrop>
+        </TopContainer>
+    </BoxContainer>
 }
